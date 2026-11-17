@@ -110,6 +110,10 @@ body.s-home .wrap { max-width: 1200px; }
 .s-hero h1 { font-size: 62px; line-height: 1.02; letter-spacing: -0.02em; margin: 0 0 22px; color: #0D0B1A; }
 .s-hero h1 em { color: #F97316; font-style: italic; }
 .s-hero .s-sub { font-size: 19px; line-height: 1.6; color: #4A4A4A; max-width: 52ch; margin: 0; }
+.s-hero-photo { position: relative; max-width: 480px; margin: 0 auto; }
+.s-hero-photo::before { content: ""; position: absolute; width: 72%; aspect-ratio: 1 / 1; border-radius: 50%; background: #FFEDD5; top: -24px; right: -24px; z-index: 0; }
+.s-hero-photo::after { content: ""; position: absolute; width: 18px; height: 18px; border-radius: 50%; background: #38BDF8; bottom: -10px; left: -10px; z-index: 2; }
+.s-hero-photo img { position: relative; z-index: 1; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; display: block; background: #FFEDD5; }
 
 /* Pillar collage (hero right) */
 .s-collage { position: relative; width: 100%; max-width: 520px; aspect-ratio: 1 / 1; margin: 0 auto; }
