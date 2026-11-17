@@ -2,13 +2,14 @@
    Fonts: Bricolage Grotesque (headings) + Karla (body), via Google Fonts. */
 
 :root {
-  --ink: #1e1c1b;          /* warm near-black: headings, links, buttons */
-  --body: #727272;         /* medium gray: body text */
-  --dot: #d5d1cf;          /* warm light gray: dot grid, backdrops */
-  --line: #d4d4d4;         /* light gray: dividers, pills, outlines */
-  --bg: #f1f1f1;           /* off-white page background */
+  /* Palette: white base, black text, lavender-purple accent family. */
+  --ink: #000000;          /* black: headings, links, buttons */
+  --body: #000000;         /* black: body text */
+  --dot: #EDDEFF;          /* pale lavender: dot grid, backdrops */
+  --line: #EDDEFF;         /* pale lavender: dividers, pills, outlines */
+  --bg: #FFFFFF;           /* white page background */
   --card: #ffffff;
-  --rust: #b4552d;         /* terracotta accent sampled from project covers */
+  --rust: #5C28AE;         /* brand purple accent (was terracotta) */
   --radius: 8px;
   --maxw: 1240px;
 }
