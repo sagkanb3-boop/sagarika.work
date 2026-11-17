@@ -170,8 +170,7 @@ body.s-home .wrap { max-width: 1200px; }
 .s-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 36px; }
 .s-card { background: #FFFFFF; border: 1px solid #EDDEFF; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; }
 .s-card-media { position: relative; display: block; overflow: hidden; border-bottom: 3px solid #5C28AE; }
-.s-card-media img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: #FCF5FF; filter: saturate(0.85) hue-rotate(-8deg); transition: transform 0.4s ease; }
-.s-card-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(92, 40, 174, 0.06) 0%, rgba(83, 31, 176, 0.22) 100%); pointer-events: none; }
+.s-card-media img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; background: #FCF5FF; transition: transform 0.4s ease; }
 .s-card:hover .s-card-media img { transform: scale(1.04); }
 .s-card-tags { position: absolute; left: 16px; bottom: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
 .s-card-tags span { background: #FFFFFF; color: #2E0870; border-radius: 999px; padding: 6px 12px; font-size: 13px; font-weight: 700; box-shadow: 0 4px 12px rgba(46, 8, 112, 0.14); }
