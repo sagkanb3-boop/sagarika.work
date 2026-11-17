@@ -77,4 +77,27 @@
       });
     });
   });
+
+  /* Research process infographic: reveal on scroll, staggered */
+  var proc = document.querySelector('.s-process');
+  if (proc) {
+    var tiles = proc.querySelectorAll('.s-proc');
+    proc.classList.add('js-anim');
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      tiles.forEach(function (el) { el.classList.add('in-view'); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var idx = Array.prototype.indexOf.call(tiles, entry.target);
+            (function (target, delay) {
+              setTimeout(function () { target.classList.add('in-view'); }, delay);
+            })(entry.target, idx * 130);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.25 });
+      tiles.forEach(function (el) { io.observe(el); });
+    }
+  }
 })();
