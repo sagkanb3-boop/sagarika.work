@@ -244,3 +244,19 @@ body.s-home .wrap { max-width: 1200px; }
   .s-nav { gap: 18px; padding: 8px 20px 8px 8px; flex-wrap: wrap; justify-content: center; }
   .s-pillars h2, .s-workintro h2, .s-impact h2, .s-test h2, .s-projects h2 { font-size: 34px; }
 }
+
+/* My research process infographic */
+.s-process { position: relative; max-width: 860px; height: 620px; margin: 48px auto 0; }
+.s-proc { position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 22px; box-sizing: border-box; font-size: 16px; line-height: 1.35; }
+.s-proc b { font-size: 19px; letter-spacing: 0.01em; }
+.s-proc.r1 { width: 360px; height: 180px; top: 0; left: 50%; transform: translateX(-50%) rotate(-5deg); background: #2E0870; color: #FFFFFF; border-radius: 0 0 180px 180px; }
+.s-proc.r2 { width: 560px; top: 200px; left: 50%; transform: translateX(-50%) rotate(2deg); background: #8250DE; color: #FFFFFF; border-radius: 999px; }
+.s-proc.r3 { width: 210px; height: 210px; top: 330px; left: 8%; transform: rotate(-3deg); background: #5C28AE; color: #FFFFFF; border-radius: 50%; }
+.s-proc.r4 { width: 280px; height: 230px; top: 320px; right: 6%; transform: rotate(3deg); background: #EDDEFF; color: #2E0870; border-radius: 58% 42% 55% 45% / 52% 58% 42% 48%; }
+.s-proc.r5 { width: 400px; top: 520px; left: 50%; transform: translateX(-50%) rotate(-2deg); background: #D8B4FF; color: #2E0870; border-radius: 999px; }
+.s-methods { max-width: 1200px; margin: 0 auto; padding: 8px 32px 56px; text-align: center; }
+.s-methods .s-label { margin-bottom: 24px; }
+@media (max-width: 700px) {
+  .s-process { height: auto; display: flex; flex-direction: column; gap: 14px; }
+  .s-proc { position: static; width: auto !important; height: auto !important; transform: none !important; border-radius: 18px !important; }
+}
