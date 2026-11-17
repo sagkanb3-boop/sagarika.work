@@ -10,189 +10,191 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,700&family=Karla:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=2">
-  <link rel="stylesheet" href="assets/css/framer.css">
+  <link rel="stylesheet" href="assets/css/framer.css?v=3">
 </head>
-<body class="framer">
+<body class="framer s-home">
 
-  <header class="f-nav">
-    <a class="f-brand" href="index.html">Sagarika Kanchibail</a>
-    <nav class="f-links" aria-label="Main navigation">
-      <a href="index.html" class="active">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="assets/files/Sagarika_Kanchibail_Resume.pdf" target="_blank" rel="noopener">Resumé</a>
-      <a href="https://www.linkedin.com/in/sagarikakanchibail/" target="_blank" rel="noopener">Linkedin</a>
-      <a class="f-cta" href="contact.html">Get in touch</a>
+  <div class="s-nav-wrap">
+    <nav class="s-nav" aria-label="Main navigation">
+      <a class="s-logo" href="index.html" aria-label="Sagarika Kanchibail — home">S</a>
+      <a class="s-link active" href="#work">Work</a>
+      <a class="s-link" href="about.html">About</a>
+      <a class="s-link" href="#contact">Contact</a>
+      <a class="s-link" href="assets/files/Sagarika_Kanchibail_Resume.pdf" target="_blank" rel="noopener">Resumé</a>
     </nav>
-  </header>
+  </div>
 
-  <section class="f-hero">
-    <div class="wrap f-hero-inner">
+  <section class="s-hero">
+    <div class="s-hero-inner">
       <div>
-        <p class="eyebrow">Sr. UX Researcher — Enterprise &amp; B2B Software</p>
-        <h1>Sagarika<br>Kanchibail</h1>
-        <p class="f-role">Sr. UX Researcher</p>
-        <div class="f-intro">
-          <p>Hello, I'm a Sr. UX Researcher with 5+ years of experience working in enterprise and B2B software.</p>
-          <p>I enjoy studying human behavior, and I have the ability to see the big, strategic picture while not losing sight of the nuts and bolts.</p>
-          <p>My background in psychology has taught me to be empathetic with users, my Business Psychology background has taught me how to map behavioral insights to business needs, and my Human Factors/Ergonomics background to advocate for the user. In practice, that shows up as a mixed-methods habit, surveys, contextual inquiry, card sorting, benchmarking, paired with an AI-assisted research workflow I built to move faster without cutting corners on rigor.</p>
-          <p>My superpower is overcoming any challenge in front of me, whether that's finding creative ways to recruit enterprise technical personas or managing stakeholder expectations.</p>
-          <p>Outside of work, I love trying new recipes, reading fiction, and always on the hunt for a new coffee spot!</p>
-        </div>
-        <div class="social-row">
-          <a href="https://www.linkedin.com/in/sagarikakanchibail/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        </div>
+        <p class="s-badge">Sr. UX Researcher — Enterprise &amp; B2B Software</p>
+        <h1>Seeing the big picture,<br>without losing the<br><em>nuts and bolts.</em></h1>
+        <p class="s-sub">I&rsquo;m a Sr. UX Researcher with 5+ years in enterprise and B2B software. I study how people actually work, then turn mixed-methods research into roadmap decisions &mdash; without cutting corners on rigor.</p>
       </div>
-      <div class="f-hero-photo">
-        <img src="assets/images/hero-portrait.webp" alt="Portrait of Sagarika Kanchibail smiling outdoors, colorful historic harbor houses behind">
+      <div class="s-collage" aria-hidden="true">
+        <div class="s-circle"></div>
+        <span class="s-dot d1"></span><span class="s-dot d2"></span><span class="s-dot d3"></span>
+        <div class="s-pill p1"><span class="s-ico">&#9638;</span>Surveys</div>
+        <div class="s-pill p2"><span class="s-ico">&#9673;</span>Contextual inquiry</div>
+        <div class="s-pill p3"><span class="s-ico">&#9639;</span>Card sorting</div>
+        <div class="s-pill p4"><span class="s-ico">&#8801;</span>Benchmarking</div>
+        <div class="s-pill p5"><span class="s-ico">&#10003;</span>Usability testing</div>
       </div>
     </div>
   </section>
 
-  <main class="wrap">
-    <section class="f-section" aria-label="Impact">
-      <h2>Impact at a glance</h2>
-      <p class="f-sub">Outcomes from the case studies below, in Sagarika's own numbers.</p>
-      <div class="f-stats">
-        <div class="f-stat"><span class="num">86.3% → 81%</span><span class="lbl">Legacy usage, after reframing the roadmap around ease-of-use, not migration pressure</span></div>
-        <div class="f-stat"><span class="num">13.7% → 19%</span><span class="lbl">Modern usage over the next two years</span></div>
-        <div class="f-stat"><span class="num">2 → 1</span><span class="lbl">Release cycles for shared roadmap research, with Rolling Research</span></div>
-        <div class="f-stat"><span class="num">n=120</span><span class="lbl">Quantitative survey behind the migration-readiness study</span></div>
-      </div>
-    </section>
+  <section class="s-pillars" aria-label="Core pillars">
+    <span class="s-label">Core Pillars of my approach</span>
+    <h2>How I turn research<br>into <em>decisions.</em></h2>
+    <div class="s-pillar-row">
+      <div class="s-pill p1"><span class="s-ico">&#9638;</span>Surveys</div>
+      <div class="s-pill p2"><span class="s-ico">&#9673;</span>Contextual inquiry</div>
+      <div class="s-pill p3"><span class="s-ico">&#9639;</span>Card sorting</div>
+      <div class="s-pill p4"><span class="s-ico">&#8801;</span>Benchmarking</div>
+      <div class="s-pill p5"><span class="s-ico">&#10003;</span>Usability testing</div>
+      <img class="s-pillar-face" src="assets/images/hero-portrait.webp" alt="Portrait of Sagarika Kanchibail">
+    </div>
+  </section>
 
-    <section class="f-section" aria-label="Selected work">
-      <h2>Selected work</h2>
-      <p class="f-sub">Six case studies from enterprise and B2B software — each with its methods, findings, and what changed.</p>
-      <div class="f-work">
+  <section class="s-workintro" aria-label="My work">
+    <span class="s-label">My Work</span>
+    <h2>My process turns user discovery and mixed methods into <em>products that work.</em></h2>
+    <p>From surveys and fieldwork to concept and usability testing, I build the evidence teams need to decide what to build next &mdash; and what to leave out.</p>
+    <div class="s-illus" aria-hidden="true">
+      <div class="ill-circle"></div>
+      <div class="ill-laptop"></div>
+      <div class="ill-check">Research plan<span>Recruit participants</span><span>Run sessions</span><span>Synthesise findings</span></div>
+      <div class="ill-plant"></div>
+    </div>
+  </section>
 
-        <article class="f-card">
-          <a href="projects/migration-readiness.html"><img src="assets/images/p1-migration/p1-survey.webp" alt="Platform Upgrade and Modernization survey in Qualtrics"></a>
-          <div class="f-card-body">
-            <div class="tags">
-              <span class="tag">Quantitative Survey (n=120)</span>
-              <span class="tag">Weighted Prioritization Scoring</span>
-              <span class="tag">Decision-Authority Screening</span>
-            </div>
-            <h3><a href="projects/migration-readiness.html">The Real Reason Customers Weren't Adopting AI (Hint: It Wasn't the Price Tag)</a></h3>
-            <p class="sub">Leadership adopted a ranked "Adoption Contract" as binding roadmap gates, sequencing migration tooling ahead of new AI features.</p>
-            <a class="view-link" href="projects/migration-readiness.html">View project</a>
+  <section class="s-projects" id="work" aria-label="Selected projects">
+    <div class="wrap">
+      <h2>Selected Projects</h2>
+      <p class="f-sub">Six case studies from enterprise and B2B software &mdash; each with its methods, findings, and what changed.</p>
+      <div class="s-grid">
+
+        <article class="s-card">
+          <a class="s-card-media" href="projects/migration-readiness.html"><img src="assets/images/p1-migration/p1-survey.webp" alt="Platform Upgrade and Modernization survey in Qualtrics">
+            <span class="s-card-tags"><span>Quantitative Survey (n=120)</span><span>Weighted Prioritization Scoring</span><span>Decision-Authority Screening</span></span>
+          </a>
+          <div class="s-card-body">
+            <div class="s-card-title"><h3><a href="projects/migration-readiness.html">The Real Reason Customers Weren&rsquo;t Adopting AI (Hint: It Wasn&rsquo;t the Price Tag)</a></h3><span class="s-org">ServiceNow</span></div>
+            <p class="sub">Leadership adopted a ranked &ldquo;Adoption Contract&rdquo; as binding roadmap gates, sequencing migration tooling ahead of new AI features.</p>
+            <div class="s-outcomes"><span><b>&#8599;</b> Adoption Contract adopted as binding roadmap gates</span><span><b>&#8599;</b> Migration tooling sequenced ahead of new AI features</span></div>
           </div>
         </article>
 
-        <article class="f-card">
-          <a href="projects/living-with-legacy.html"><img src="assets/images/p2-legacy/p2-charts.webp" alt="Charts showing 86.3% of workflows still done in the legacy interface"></a>
-          <div class="f-card-body">
-            <div class="tags">
-              <span class="tag">Contextual Inquiry</span>
-              <span class="tag">Two-Phase Field Study (On-site + Remote)</span>
-              <span class="tag">Persona-Segmented Discussion Guides</span>
-            </div>
-            <h3><a href="projects/living-with-legacy.html">Why 86% of Customers Refused to Let Go of Legacy and What Finally Moved Them</a></h3>
-            <p class="sub">Reframed the roadmap around ease-of-use, not migration pressure. Legacy usage fell from 86.3% to 81% and modern usage rose from 13.7% to 19% over the next two years.</p>
-            <a class="view-link" href="projects/living-with-legacy.html">View project</a>
+        <article class="s-card">
+          <a class="s-card-media" href="projects/living-with-legacy.html"><img src="assets/images/p2-legacy/p2-charts.webp" alt="Charts showing 86.3% of workflows still done in the legacy interface">
+            <span class="s-card-tags"><span>Contextual Inquiry</span><span>Two-Phase Field Study</span><span>Persona-Segmented Guides</span></span>
+          </a>
+          <div class="s-card-body">
+            <div class="s-card-title"><h3><a href="projects/living-with-legacy.html">Why 86% of Customers Refused to Let Go of Legacy and What Finally Moved Them</a></h3><span class="s-org">ServiceNow</span></div>
+            <p class="sub">Reframed the roadmap around ease-of-use, not migration pressure.</p>
+            <div class="s-outcomes"><span><b>&#8599;</b> Legacy usage fell from 86.3% to 81%</span><span><b>&#8599;</b> Modern usage rose from 13.7% to 19%</span></div>
           </div>
         </article>
 
-        <article class="f-card">
-          <a href="projects/ai-processing-citations.html"><img src="assets/images/p3-ai/p3-concepts.webp" alt="Two AI concepts evaluated: banner message and field-level AI sparkles"></a>
-          <div class="f-card-body">
-            <div class="tags">
-              <span class="tag">Concept Testing</span>
-              <span class="tag">1:1 Interviews</span>
-              <span class="tag">Trust &amp; Transparency in AI</span>
-            </div>
-            <h3><a href="projects/ai-processing-citations.html">Would You Trust an AI You Couldn't See Working? Neither Would They.</a></h3>
+        <article class="s-card">
+          <a class="s-card-media" href="projects/ai-processing-citations.html"><img src="assets/images/p3-ai/p3-concepts.webp" alt="Two AI concepts evaluated: banner message and field-level AI sparkles">
+            <span class="s-card-tags"><span>Concept Testing</span><span>1:1 Interviews</span><span>Trust &amp; Transparency in AI</span></span>
+          </a>
+          <div class="s-card-body">
+            <div class="s-card-title"><h3><a href="projects/ai-processing-citations.html">Would You Trust an AI You Couldn&rsquo;t See Working? Neither Would They.</a></h3><span class="s-org">ServiceNow</span></div>
             <p class="sub">Findings shaped which AI Processing and Citation patterns shipped into the design system.</p>
-            <a class="view-link" href="projects/ai-processing-citations.html">View project</a>
+            <div class="s-outcomes"><span><b>&#8599;</b> AI Processing patterns shipped into the design system</span><span><b>&#8599;</b> Citation patterns shaped by trust and transparency findings</span></div>
           </div>
         </article>
 
-        <article class="f-card">
-          <a href="projects/rolling-research.html"><img src="assets/images/p4-rolling/p4-three-week.webp" alt="The repeatable three-week Rolling Research round: planning, sessions, synthesis"></a>
-          <div class="f-card-body">
-            <div class="tags">
-              <span class="tag">Recurring Qual Research Program</span>
-              <span class="tag">Cross-Functional Methodology Design</span>
-              <span class="tag">Iterative Concept &amp; Usability Testing</span>
-            </div>
-            <h3><a href="projects/rolling-research.html">How We Cut Research Time in Half Without Cutting Corners</a></h3>
+        <article class="s-card">
+          <a class="s-card-media" href="projects/rolling-research.html"><img src="assets/images/p4-rolling/p4-three-week.webp" alt="The repeatable three-week Rolling Research round: planning, sessions, synthesis">
+            <span class="s-card-tags"><span>Recurring Qual Research</span><span>Cross-Functional Methods</span><span>Concept &amp; Usability Testing</span></span>
+          </a>
+          <div class="s-card-body">
+            <div class="s-card-title"><h3><a href="projects/rolling-research.html">How We Cut Research Time in Half Without Cutting Corners</a></h3><span class="s-org">ServiceNow</span></div>
             <p class="sub">Compressed a two-release-cycle research process into one, speeding time-to-market for shared roadmap features.</p>
-            <a class="view-link" href="projects/rolling-research.html">View project</a>
+            <div class="s-outcomes"><span><b>&#8599;</b> Two release cycles compressed into one</span><span><b>&#8599;</b> Faster time-to-market for shared roadmap features</span></div>
           </div>
         </article>
 
-        <article class="f-card">
-          <a href="projects/enhancing-bulk-actions.html"><img src="assets/images/p5-bulk/p5-ui-1.png" alt="Reltio Search UI with faceted search results"></a>
-          <div class="f-card-body">
-            <div class="tags">
-              <span class="tag">In-Depth interviews</span>
-              <span class="tag">User Journey map</span>
-            </div>
-            <h3><a href="projects/enhancing-bulk-actions.html">Enhancing Search UI Experience</a></h3>
+        <article class="s-card">
+          <a class="s-card-media" href="projects/enhancing-bulk-actions.html"><img src="assets/images/p5-bulk/p5-ui-1.png" alt="Reltio Search UI with faceted search results">
+            <span class="s-card-tags"><span>In-Depth interviews</span><span>User Journey map</span></span>
+          </a>
+          <div class="s-card-body">
+            <div class="s-card-title"><h3><a href="projects/enhancing-bulk-actions.html">Enhancing Search UI Experience</a></h3><span class="s-org">Reltio</span></div>
             <p class="sub">To understand how Bulk Actions was currently being leveraged by end users.</p>
-            <a class="view-link" href="projects/enhancing-bulk-actions.html">View project</a>
+            <div class="s-outcomes"><span><b>&#8599;</b> Less confusion and anxiety when executing Bulk Edit</span><span><b>&#8599;</b> Research and subsequent design changes followed the study</span></div>
           </div>
         </article>
 
-        <article class="f-card">
-          <a href="projects/data-validation-function.html"><img src="assets/images/p6-dv/p6-ui-1.png" alt="Data Validation function builder in Reltio"></a>
-          <div class="f-card-body">
-            <div class="tags">
-              <span class="tag">Persona creation</span>
-              <span class="tag">Usability testing</span>
-              <span class="tag">Metrics and goal setting</span>
-            </div>
-            <h3><a href="projects/data-validation-function.html">Data Validation Function</a></h3>
+        <article class="s-card">
+          <a class="s-card-media" href="projects/data-validation-function.html"><img src="assets/images/p6-dv/p6-ui-1.png" alt="Data Validation function builder in Reltio">
+            <span class="s-card-tags"><span>Persona creation</span><span>Usability testing</span><span>Metrics and goal setting</span></span>
+          </a>
+          <div class="s-card-body">
+            <div class="s-card-title"><h3><a href="projects/data-validation-function.html">Data Validation Function</a></h3><span class="s-org">Reltio</span></div>
             <p class="sub">Goal of this study was to evaluate the usability, user experience, user responses, expectations and preferences for Data Validation.</p>
-            <a class="view-link" href="projects/data-validation-function.html">View project</a>
+            <div class="s-outcomes"><span><b>&#8599;</b> 8 research insights implemented</span><span><b>&#8599;</b> 6-metric baseline set up to track performance long-term</span></div>
           </div>
         </article>
 
       </div>
-    </section>
-
-    <section class="f-section" aria-label="How I work">
-      <h2>How I work</h2>
-      <p class="f-sub">A mixed-methods habit, paired with an AI-assisted research workflow built to move faster without cutting corners on rigor.</p>
-      <div class="f-methods">
-        <div class="f-method"><h3>Surveys</h3><p>Quantitative surveys with decision-authority screening and weighted prioritization scoring.</p></div>
-        <div class="f-method"><h3>Contextual inquiry</h3><p>On-site and remote field studies, with persona-segmented discussion guides.</p></div>
-        <div class="f-method"><h3>Card sorting</h3><p>Structuring information the way users actually think about it, not the way the system is built.</p></div>
-        <div class="f-method"><h3>Benchmarking</h3><p>Comparing experiences against the field, so recommendations land with evidence behind them.</p></div>
-        <div class="f-method"><h3>Concept &amp; usability testing</h3><p>Iterative testing of concepts and flows, including trust and transparency in AI.</p></div>
-        <div class="f-method"><h3>AI-assisted workflow</h3><p>An AI-assisted research workflow built to move faster without cutting corners on rigor.</p></div>
-      </div>
-    </section>
-  </main>
-
-  <section class="wrap contact-section" id="contact">
-    <h2>Get in touch!</h2>
-    <p class="lede">Do you have a product idea, want to discuss a project, or need a researcher? Drop me an email!</p>
-    <form class="contact-form" data-contact-form>
-      <div class="field">
-        <label for="cf-email">Your email</label>
-        <input id="cf-email" type="email" name="email" required>
-      </div>
-      <div class="field">
-        <label for="cf-name">Your name</label>
-        <input id="cf-name" type="text" name="name" required>
-      </div>
-      <div class="field">
-        <label for="cf-msg">Write your message here...</label>
-        <textarea id="cf-msg" name="message" required></textarea>
-      </div>
-      <button class="btn" type="submit">Send email</button>
-      <p class="form-note"></p>
-    </form>
-    <p class="form-ok">Thanks — your message is on its way. I'll get back to you soon!</p>
+    </div>
   </section>
 
-  <footer class="marquee" aria-label="Research tools">
-    <div class="marquee-track">
-      <span>Great Question</span><span>Miro</span><span>Claude</span><span>User Interviews</span><span>Dovetail</span><span>Qualtrics</span>
-      <span>Great Question</span><span>Miro</span><span>Claude</span><span>User Interviews</span><span>Dovetail</span><span>Qualtrics</span>
+  <section class="s-impact" aria-label="Impact">
+    <span class="s-label">Impact</span>
+    <h2>Research that <em>changed what shipped.</em></h2>
+    <p class="f-sub">Outcomes from the case studies above, in my own numbers.</p>
+    <div class="s-logos" aria-label="Companies I have worked with">
+      <div class="s-logos-track"><span>ServiceNow</span><span>Reltio</span><span>ServiceNow</span><span>Reltio</span><span>ServiceNow</span><span>Reltio</span><span>ServiceNow</span><span>Reltio</span></div>
     </div>
+    <p class="s-metrics-head">Numbers that tell my story</p>
+    <div class="s-metrics">
+      <div class="s-metric m1"><span class="num">86.3% &rarr; 81%</span><span class="lbl">Legacy usage, after reframing the roadmap around ease-of-use</span></div>
+      <div class="s-metric m2"><span class="num">13.7% &rarr; 19%</span><span class="lbl">Modern usage over the next two years</span></div>
+      <div class="s-metric m3"><span class="num">2 &rarr; 1</span><span class="lbl">Release cycles for shared roadmap research, with Rolling Research</span></div>
+      <div class="s-metric m4"><span class="num">n=120</span><span class="lbl">Quantitative survey behind the migration-readiness study</span></div>
+    </div>
+  </section>
+
+  <section class="s-test" aria-label="Testimonials">
+    <h2>What it&rsquo;s like to work with me</h2>
+    <div class="s-t-track">
+      <article class="s-t-card">
+        <span class="q">&ldquo;</span>
+        <blockquote>Sagarika was the UX Researcher for the Search UI project. She is curious by nature and she set up meetings with me to ask questions while she was trying to understand the product. She was a great team player and is not afraid of speaking her mind when it&rsquo;s in the interest of users.</blockquote>
+        <div class="s-t-who"><span class="s-t-face">PS</span><div><b>Prasad Satam</b><span>Product Manager @ Reltio</span></div></div>
+      </article>
+      <article class="s-t-card">
+        <span class="q">&ldquo;</span>
+        <blockquote>Sagarika interned with my UX team in Summer and Fall 2020. I can&rsquo;t praise her enough: she took on challenges with enthusiasm and reached out to make connections across the company even with challenge of starting the job remotely during lockdown. She&rsquo;s extremely bright, understands the product/feature in discussion well, has a great ability to articulate her thoughts and is not afraid to voice her opinions. I was delighted to have her on my team.</blockquote>
+        <div class="s-t-who"><span class="s-t-face">CA</span><div><b>Carina Alabanza</b><span>Manager @ Reltio</span></div></div>
+      </article>
+      <article class="s-t-card" aria-hidden="true">
+        <span class="q">&ldquo;</span>
+        <blockquote>Sagarika was the UX Researcher for the Search UI project. She is curious by nature and she set up meetings with me to ask questions while she was trying to understand the product. She was a great team player and is not afraid of speaking her mind when it&rsquo;s in the interest of users.</blockquote>
+        <div class="s-t-who"><span class="s-t-face">PS</span><div><b>Prasad Satam</b><span>Product Manager @ Reltio</span></div></div>
+      </article>
+      <article class="s-t-card" aria-hidden="true">
+        <span class="q">&ldquo;</span>
+        <blockquote>Sagarika interned with my UX team in Summer and Fall 2020. I can&rsquo;t praise her enough: she took on challenges with enthusiasm and reached out to make connections across the company even with challenge of starting the job remotely during lockdown. She&rsquo;s extremely bright, understands the product/feature in discussion well, has a great ability to articulate her thoughts and is not afraid to voice her opinions. I was delighted to have her on my team.</blockquote>
+        <div class="s-t-who"><span class="s-t-face">CA</span><div><b>Carina Alabanza</b><span>Manager @ Reltio</span></div></div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="s-footer" id="contact">
+    <div class="s-spark" aria-hidden="true">&#10022;</div>
+    <h2>Let&rsquo;s chat!</h2>
+    <p>I&rsquo;m open to new opportunities &mdash; and always up for a cup of coffee.</p>
+    <div class="s-contact-btns">
+      <a href="mailto:sagkanb3@gmail.com">&#9993; Shoot an email</a>
+      <a href="https://www.linkedin.com/in/sagarikakanchibail/" target="_blank" rel="noopener">in&nbsp; Connect with me</a>
+    </div>
+    <div class="s-big-s" aria-hidden="true">S</div>
   </footer>
 
   <script src="assets/js/main.js"></script>
