@@ -246,7 +246,7 @@ body.s-home .wrap { max-width: 1200px; }
 }
 
 /* My research process infographic */
-.s-process { position: relative; max-width: 860px; height: 620px; margin: 48px auto 0; }
+.s-process { position: relative; max-width: 860px; height: 750px; margin: 48px auto 0; }
 .s-proc { position: absolute; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 22px; box-sizing: border-box; font-size: 16px; line-height: 1.35; }
 .s-proc b { font-size: 19px; letter-spacing: 0.01em; }
 .s-proc.r1 { width: 360px; height: 180px; top: 0; left: 50%; transform: translateX(-50%) rotate(-5deg); background: #2E0870; color: #FFFFFF; border-radius: 0 0 180px 180px; }
@@ -276,3 +276,5 @@ body.s-home .wrap { max-width: 1200px; }
   .s-proc { animation: none; transition: none; }
   .s-process.js-anim .s-proc { opacity: 1; }
 }
+
+.s-proc.r6 { width: 420px; top: 640px; left: 50%; transform: translateX(-50%) rotate(1deg); background: #531FB0; color: #FFFFFF; border-radius: 999px; animation-duration: 6.8s; animation-delay: 1s; }
