@@ -143,6 +143,9 @@ body.s-home .wrap { max-width: 1200px; }
 .s-pillar-row .s-pill:nth-child(3) { transform: rotate(-1deg); }
 .s-pillar-row .s-pill:nth-child(4) { transform: rotate(3deg); }
 .s-pillar-row .s-pill:nth-child(5) { transform: rotate(-3deg); }
+.s-pillar-row .s-pill:nth-child(6) { transform: rotate(2deg); }
+.s-pill.p6 { background: #E5D1FE; color: #2E0870; border-radius: 999px; }
+.s-pill.p6 .s-ico { background: #5C28AE; color: #FFFFFF; }
 .s-pillar-face { width: 76px; height: 76px; border-radius: 50%; object-fit: cover; border: 4px solid #FFFFFF; box-shadow: 0 8px 20px rgba(46, 8, 112, 0.16); transform: rotate(2deg); }
 
 /* My Work intro + illustration */
