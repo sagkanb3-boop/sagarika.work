@@ -5,11 +5,11 @@
   /* Palette: white base, black text, lavender-purple accent family. */
   --ink: #000000;          /* black: headings, links, buttons */
   --body: #000000;         /* black: body text */
-  --dot: #EDDEFF;          /* pale lavender: dot grid, backdrops */
-  --line: #EDDEFF;         /* pale lavender: dividers, pills, outlines */
+  --dot: #FFE8E0;          /* pale lavender: dot grid, backdrops */
+  --line: #FFE8E0;         /* pale lavender: dividers, pills, outlines */
   --bg: #FFFFFF;           /* white page background */
   --card: #ffffff;
-  --rust: #5C28AE;         /* brand purple accent (was terracotta) */
+  --rust: #FF6F61;         /* brand purple accent (was terracotta) */
   --radius: 8px;
   --maxw: 1240px;
 }
