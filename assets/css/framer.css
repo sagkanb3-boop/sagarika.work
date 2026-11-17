@@ -203,7 +203,8 @@ body.s-home .wrap { max-width: 1200px; }
 .s-t-card .q { font-family: 'Bricolage Grotesque', sans-serif; font-size: 64px; line-height: 0.4; color: #8FE0D4; display: block; margin: 18px 0 20px; }
 .s-t-card blockquote { margin: 0; font-size: 17px; line-height: 1.6; color: #333333; }
 .s-t-who { display: flex; align-items: center; gap: 14px; margin-top: 22px; }
-.s-t-face { width: 56px; height: 56px; flex: 0 0 56px; border-radius: 50%; background: #FF6F61; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; }
+.s-t-face { width: 56px; height: 56px; flex: 0 0 56px; border-radius: 50%; background: #FF6F61; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; overflow: hidden; }
+.s-t-face img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .s-t-who b { display: block; font-size: 16px; color: #000000; }
 .s-t-who span { font-size: 14px; color: #6A6A6A; }
 
