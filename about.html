@@ -10,26 +10,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,700&family=Karla:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/framer.css">
 </head>
-<body>
+<body class="framer">
 
-  <div class="nav-shell">
-    <nav class="pillnav" aria-label="Main navigation">
+  <header class="f-nav">
+    <a class="f-brand" href="index.html">Sagarika Kanchibail</a>
+    <nav class="f-links" aria-label="Main navigation">
       <a href="index.html">Work</a>
       <a href="about.html" class="active">About</a>
       <a href="contact.html">Contact</a>
       <a href="assets/files/Sagarika_Kanchibail_Resume.pdf" target="_blank" rel="noopener">Resumé</a>
       <a href="https://www.linkedin.com/in/sagarikakanchibail/" target="_blank" rel="noopener">Linkedin</a>
+      <a class="f-cta" href="contact.html">Get in touch</a>
     </nav>
-  </div>
+  </header>
 
   <main class="wrap">
-    <div class="about-grid">
+    <div class="f-about-hero">
+      <p class="eyebrow">About</p>
+      <h1>Curious by nature, user-centric by practice.</h1>
+    </div>
+
+    <div class="f-about-grid">
       <div>
         <img src="assets/images/hero-portrait.webp" alt="Portrait of Sagarika Kanchibail smiling outdoors, colorful historic harbor houses behind">
       </div>
       <div>
-        <h1>Curious by nature, user-centric by practice.</h1>
         <p>I'm a Senior UX Researcher with a foundation in Psychology and Human-Computer Interaction, currently leading user research for enterprise and B2B software as a Sr. UXR at ServiceNow.</p>
         <p>That foundation was laid by a Postgraduate Certificate in Business Psychology (Human Factors emphasis) from the University of Manchester and an M.S. in Human Factors/Ergonomics from San José State University, the through-line since has been the same question at every scale: what does this person actually need to trust the system in front of them?</p>
         <p>I thrive in cross-functional teams, and I'm equally at home in the qualitative and the quantitative, every research decision, and the design solutions that follow it, stays user-centric.</p>
@@ -39,6 +46,40 @@
         </div>
       </div>
     </div>
+
+    <section class="f-section" aria-label="Journey">
+      <h2>The journey</h2>
+      <dl class="f-journey">
+        <div class="f-journey-row"><dt>Foundation</dt><dd>Psychology, and Human-Computer Interaction</dd></div>
+        <div class="f-journey-row"><dt>Business Psychology</dt><dd>Postgraduate Certificate in Business Psychology (Human Factors emphasis), University of Manchester</dd></div>
+        <div class="f-journey-row"><dt>Human Factors</dt><dd>M.S. in Human Factors/Ergonomics, San José State University</dd></div>
+        <div class="f-journey-row"><dt>Now</dt><dd>Sr. UX Researcher, ServiceNow — leading user research for enterprise and B2B software</dd></div>
+      </dl>
+      <p class="f-quote">My superpower is overcoming any challenge in front of me, whether that's finding creative ways to recruit enterprise technical personas or managing stakeholder expectations.</p>
+    </section>
+
+    <section class="f-section" aria-label="Skills">
+      <h2>Skills &amp; tools</h2>
+      <p class="f-sub">Mixed-methods research, with an AI-assisted workflow built to move faster without cutting corners on rigor.</p>
+      <div class="tags" style="margin-top: 24px;">
+        <span class="tag">Surveys</span>
+        <span class="tag">Contextual Inquiry</span>
+        <span class="tag">Card Sorting</span>
+        <span class="tag">Benchmarking</span>
+        <span class="tag">Concept Testing</span>
+        <span class="tag">Usability Testing</span>
+        <span class="tag">1:1 Interviews</span>
+        <span class="tag">Persona Creation</span>
+      </div>
+      <div class="tags">
+        <span class="tag">Great Question</span>
+        <span class="tag">Miro</span>
+        <span class="tag">Claude</span>
+        <span class="tag">User Interviews</span>
+        <span class="tag">Dovetail</span>
+        <span class="tag">Qualtrics</span>
+      </div>
+    </section>
   </main>
 
   <footer class="marquee" aria-label="Research tools">
