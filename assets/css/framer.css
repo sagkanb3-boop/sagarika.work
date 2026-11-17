@@ -1,0 +1,102 @@
+/* Framer-style layer for the new portfolio version.
+   Only used by index.html and about.html. Project pages keep style.css as-is.
+   Layout inspiration: clean Framer portfolio structure (hero, selected-work
+   cards, impact metrics, how-I-work, contact) — all copy/images are Sagarika's own.
+   Colors: white #FFFFFF base, black #000000 text,
+   lavender-purple accent family (#5C28AE brand, #8250DE, #730DB5, #531FB0,
+   #7F18A6, #2E0870 dark purple), pale lavender tints (#FCF5FF, #EDDEFF,
+   #E5D1FE, #D8B4FF, #F5DDFF, #CD9AFF), black #000000 footer. */
+
+body.framer { background: #FFFFFF; color: #000000; }
+
+/* Top nav — clean bar, name left, links right */
+.f-nav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; padding: 18px 32px;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid #EDDEFF;
+  backdrop-filter: blur(8px);
+}
+.f-brand { font-family: 'Bricolage Grotesque', sans-serif; font-size: 20px; font-weight: 700; color: #000000; text-decoration: none; letter-spacing: -0.01em; }
+.f-links { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; }
+.f-links a { text-decoration: none; color: #000000; font-size: 16px; }
+.f-links a:hover, .f-links a.active { color: #5C28AE; font-weight: 700; }
+.f-links a.f-cta { background: #5C28AE; color: #FFFFFF; border-radius: 999px; padding: 8px 18px; font-weight: 700; }
+.f-links a.f-cta:hover { background: #531FB0; color: #FFFFFF; opacity: 1; }
+
+/* Hero */
+.f-hero { padding: 72px 0 48px; background: #FFFFFF; }
+.f-hero-inner { display: grid; grid-template-columns: 7fr 5fr; gap: 56px; align-items: start; }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #5C28AE; margin: 0 0 18px; }
+.f-hero h1 { font-size: 76px; line-height: 0.98; letter-spacing: -0.02em; margin: 0 0 8px; color: #0D0B1A; }
+.f-hero .f-role { font-family: 'Bricolage Grotesque', sans-serif; font-size: 32px; color: #000000; margin: 0 0 28px; }
+.f-hero .f-intro { font-size: 19px; }
+.f-hero .f-intro p { margin-bottom: 0.9em; }
+.f-hero-photo img { border-radius: 16px; aspect-ratio: 3 / 4; object-fit: cover; width: 100%; background: #EDDEFF; }
+body.framer .social-row a { background: #5C28AE; color: #FFFFFF; }
+
+/* Section headings */
+.f-section { padding: 56px 0 8px; }
+.f-section h2 { font-size: 40px; margin-bottom: 8px; color: #0D0B1A; }
+.f-section .f-sub { font-size: 19px; max-width: 640px; }
+
+/* Impact metrics — tinted cards */
+.f-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 36px 0 8px; }
+.f-stat { border: 1px solid #EDDEFF; border-radius: 14px; padding: 24px 22px; background: #FFFFFF; }
+.f-stat:nth-child(1) { background: #531FB0; border-color: #531FB0; }
+.f-stat:nth-child(1) .num, .f-stat:nth-child(1) .lbl { color: #FFFFFF; }
+.f-stat:nth-child(2) { background: #CD9AFF; border-color: #CD9AFF; }
+.f-stat:nth-child(3) { background: #F5DDFF; border-color: #F5DDFF; }
+.f-stat:nth-child(4) { background: #7F18A6; border-color: #7F18A6; }
+.f-stat:nth-child(4) .num, .f-stat:nth-child(4) .lbl { color: #FFFFFF; }
+.f-stat .num { font-family: 'Bricolage Grotesque', sans-serif; font-size: 34px; font-weight: 700; color: #000000; display: block; line-height: 1.1; }
+.f-stat .lbl { font-size: 15px; line-height: 1.5; display: block; margin-top: 8px; }
+
+/* Selected work — image-top cards on a pale lavender section */
+.f-work { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 32px; }
+.f-card { background: #FFFFFF; border: 1px solid #EDDEFF; border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+.f-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; background: #FCF5FF; }
+.f-card-body { padding: 26px 26px 28px; display: flex; flex-direction: column; flex: 1; }
+.f-card-body h3 { font-size: 25px; margin-bottom: 10px; }
+.f-card-body h3 a { text-decoration: none; color: #000000; }
+.f-card-body h3 a:hover { text-decoration: underline; text-underline-offset: 5px; color: #5C28AE; }
+.f-card-body .sub { font-size: 17px; flex: 1; }
+body.framer .tag { background: #EDDEFF; color: #2E0870; border-color: #E5D1FE; }
+body.framer .view-link { border-color: #E5D1FE; color: #000000; }
+body.framer .view-link:hover { background: #5C28AE; color: #FFFFFF; border-color: #5C28AE; }
+
+/* How I work */
+.f-methods { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
+.f-method { background: #FCF5FF; border: 1px solid #EDDEFF; border-radius: 14px; padding: 24px; }
+.f-method h3 { font-size: 20px; margin-bottom: 8px; }
+.f-method p { font-size: 16px; margin: 0; }
+
+/* Contact button */
+body.framer .btn { background: #5C28AE; color: #FFFFFF; }
+body.framer .btn:hover { background: #531FB0; opacity: 1; }
+
+/* Black footer marquee */
+body.framer .marquee { background: #000000; border-top: none; padding: 30px 0 46px; }
+body.framer .marquee-track span { color: #FFFFFF; }
+
+/* About page */
+.f-about-hero { padding: 64px 0 16px; }
+.f-about-hero h1 { font-size: 56px; max-width: 20ch; color: #0D0B1A; }
+.f-about-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: start; padding: 32px 0 16px; }
+.f-about-grid img { border-radius: 16px; aspect-ratio: 3 / 4; object-fit: cover; width: 100%; background: #EDDEFF; }
+.f-about-grid p { font-size: 18px; }
+.f-journey { margin: 24px 0 8px; border-top: 1px solid #EDDEFF; }
+.f-journey-row { display: grid; grid-template-columns: 220px 1fr; gap: 24px; padding: 16px 0; border-bottom: 1px solid #EDDEFF; font-size: 16px; }
+.f-journey-row dt { font-weight: 700; color: #5C28AE; }
+.f-journey-row dd { margin: 0; }
+.f-quote { font-family: 'Bricolage Grotesque', sans-serif; font-size: 26px; font-weight: 700; color: #0D0B1A; border-left: 4px solid #5C28AE; padding: 6px 0 6px 22px; margin: 32px 0; max-width: 34ch; }
+
+@media (max-width: 900px) {
+  .f-hero-inner, .f-about-grid { grid-template-columns: 1fr; gap: 28px; }
+  .f-hero h1 { font-size: 48px; }
+  .f-stats, .f-work, .f-methods { grid-template-columns: 1fr; }
+  .f-journey-row { grid-template-columns: 1fr; gap: 4px; }
+  .f-nav { padding: 14px 18px; }
+  .f-links { gap: 16px; }
+}
